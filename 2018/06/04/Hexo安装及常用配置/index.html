@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Hexo安装及常用配置 | 大惊哥的博客 | 山川异域，风月同天。</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="hexo,心得,技术">
+    <meta name="description" content="Hexo 安装方法在 Archlinux 中，输入以下命令： sudo pacman -S nodejs sudo pacman -S npm npm install -g hexo-cli npm install hexo-deployer-git --save其中，最后一行是为了使用 deploy 命令进行在 Github 上的部署。 在 Windows 中，只需要去 node.js 官网下载">
+<meta name="keywords" content="hexo,心得,技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo安装及常用配置">
+<meta property="og:url" content="http://yoursite.com/2018/06/04/Hexo安装及常用配置/index.html">
+<meta property="og:site_name" content="大惊哥的博客">
+<meta property="og:description" content="Hexo 安装方法在 Archlinux 中，输入以下命令： sudo pacman -S nodejs sudo pacman -S npm npm install -g hexo-cli npm install hexo-deployer-git --save其中，最后一行是为了使用 deploy 命令进行在 Github 上的部署。 在 Windows 中，只需要去 node.js 官网下载">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-09-24T15:24:33.366Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo安装及常用配置">
+<meta name="twitter:description" content="Hexo 安装方法在 Archlinux 中，输入以下命令： sudo pacman -S nodejs sudo pacman -S npm npm install -g hexo-cli npm install hexo-deployer-git --save其中，最后一行是为了使用 deploy 命令进行在 Github 上的部署。 在 Windows 中，只需要去 node.js 官网下载">
+    
+        <link rel="alternate" type="application/atom+xml" title="大惊哥的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">大惊哥</h5>
+          <a href="mailto:openkam@foxmail.com" title="openkam@foxmail.com" class="mail">openkam@foxmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/openkam" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/5868209600" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-link"></i>
+                相册
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Hexo安装及常用配置</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Hexo安装及常用配置</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-06-04T02:24:04.000Z" itemprop="datePublished" class="page-time">
+  2018-06-04
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo-安装方法"><span class="post-toc-number">1.</span> <span class="post-toc-text">Hexo 安装方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Github-配置"><span class="post-toc-number">2.</span> <span class="post-toc-text">Github 配置</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Hexo-配置"><span class="post-toc-number">3.</span> <span class="post-toc-text">Hexo 配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#站点配置"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">站点配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#suka-主题配置"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">suka 主题配置</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Hexo安装及常用配置"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Hexo安装及常用配置</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-06-04 10:24:04" datetime="2018-06-04T02:24:04.000Z"  itemprop="datePublished">2018-06-04</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Hexo-安装方法"><a href="#Hexo-安装方法" class="headerlink" title="Hexo 安装方法"></a>Hexo 安装方法</h2><p>在 Archlinux 中，输入以下命令：</p>
+<pre><code>sudo pacman -S nodejs
+sudo pacman -S npm
+npm install -g hexo-cli
+npm install hexo-deployer-git --save</code></pre><p>其中，最后一行是为了使用 deploy 命令进行在 Github 上的部署。</p>
+<p>在 Windows 中，只需要去 node.js 官网下载安装即可。通常 node.js 自带 npm 。</p>
+<h2 id="Github-配置"><a href="#Github-配置" class="headerlink" title="Github 配置"></a>Github 配置</h2><p>第一步，在 Github 中，新建一个库，库的名字为 username.github.io，username 为在 Github 上的用户名。在这里我的名字为 openkam.github.io。</p>
+<p>第二步，添加 ssh 密钥。本机运行如下命令：</p>
+<pre><code>ssh-keygen -t rsa -C &quot;xxxxxx@yy.com&quot;</code></pre><p>替换成自己的邮箱即可。而后在 ~/.ssh 文件夹中，找到 id_rsa.pub 文件，打开后粘贴到 Github - Settings - SSH and GPG keys - New SSH key 中。这样我们的公钥就添加到了自己的 Github 中。</p>
+<p>第三步，本机配置。在终端中运行以下命令设置本机的用户名和邮箱：</p>
+<pre><code>git config --global user.name &quot;Furzoom&quot;
+git config --global user.email &quot;example@ex.com&quot;</code></pre><h2 id="Hexo-配置"><a href="#Hexo-配置" class="headerlink" title="Hexo 配置"></a>Hexo 配置</h2><p>要开始一个新项目，运行以下命令：</p>
+<pre><code>hexo init foldername</code></pre><p>其中 foldername 为项目的文件夹名称。</p>
+<p>程序自动生成了一系列文件。其中，_config.yml 文件为站点的配置文件。要应用主题，我们下载好了 suka 主题，放在了 themes 文件夹里。</p>
+<p>下面就我个人进行的配置，分别进行了阐述。</p>
+<h3 id="站点配置"><a href="#站点配置" class="headerlink" title="站点配置"></a>站点配置</h3><p>基本的网页配置属性如下：</p>
+<pre><code>title: 大惊哥的博客
+subtitle: Awesome.
+description: 此人很懒，只想瞎写。喜欢Python，喜欢偷懒。
+keywords:
+author: 赵麟
+language: zh-CN
+timezone:</code></pre><p>其中，title 为站点的主标题，subtitle 为副标题，这些只是对网站的描述。language 一项最为重要，决定了下文中主题的语言。</p>
+<p>在 theme 一项中，后面设置为 suka 主题的文件夹名称，即站点文件夹下的 themes 文件夹里 suka 文件夹名称。</p>
+<p>在配置文件的最后，为站点部署的设置。我本人的具体配置如下：</p>
+<pre><code>deploy:
+  type: git
+  repo: git@github.com:openkam/openkam.github.io.git
+  branch: master</code></pre><h3 id="suka-主题配置"><a href="#suka-主题配置" class="headerlink" title="suka 主题配置"></a>suka 主题配置</h3><p>具体见 <a href="https://theme-suka.skk.moe/docs/" target="_blank" rel="noopener">https://theme-suka.skk.moe/docs/</a></p>
+<p>暂时就到这里。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-09-24T15:24:33.366Z" itemprop="dateUpdated">2019-09-24 23:24:33</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/06/04/Hexo安装及常用配置/" target="_blank" rel="external">http://yoursite.com/2018/06/04/Hexo安装及常用配置/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.png" alt="大惊哥">
+            大惊哥
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/心得/">心得</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&title=《Hexo安装及常用配置》 — 大惊哥的博客&pic=http://yoursite.com/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&title=《Hexo安装及常用配置》 — 大惊哥的博客&source=呆头呆脑" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/04/Hexo安装及常用配置/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo安装及常用配置》 — 大惊哥的博客&url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/06/05/我喜欢的一些文言文/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">我喜欢的一些文言文</h4>
+      </a>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>大惊哥 &copy; 2015 - 2019</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&title=《Hexo安装及常用配置》 — 大惊哥的博客&pic=http://yoursite.com/img/avatar.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&title=《Hexo安装及常用配置》 — 大惊哥的博客&source=呆头呆脑" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/06/04/Hexo安装及常用配置/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Hexo安装及常用配置》 — 大惊哥的博客&url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2018/06/04/Hexo安装及常用配置/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aS46DMBBFUfa/aXoaKTJ9X5W7JVzXI5SA8WFg1cfXhcf9MVa/f/67+uX7mrxl25AhQ8ZrGffjeL6HY1b37JpBhgwZExirHWx1D1/c6ppsx2RtMmTIkJFek39reBkyZMhIN1w0NaA+J7EyZMiQkSaxJEx8Tkp53ewPc3EZMmS8kFGb+n+u/6S/IUOGjFcx7nCks/HNurUqGTJkHM1IE9R0EbXEuLgeGTJkDGDwSXnJrHY4g7/rqn0/GTJkvIqRhoOdgho/EBaHlTJkyBjDSLc8fuSiNjP5QDJkyJjAqDUA0hIbj+X4szJkyJjDSIO/53S0c1SCtzbRuTYZMmQcxOgX99MtMk10OV6GDBmnMshjaRE/bRLE0es3WIYMGUcz+ObYYdRS304ZToYMGScxOkci0nZCbWb0gWTIkDGAkb6YJKLkM6WJ6y9JrAwZMo5m1Iplu7bgzttlyJAxgcEzXd507KfEvLGKznHIkCHjIEbtAV70T4tu8VYrQ4aMoxmtBDKcJy2rBW1OGTJkDGDwgxfpcQqS7m4ISWXIkDGGUWtJ8vS1Nhs6MyJDhoxDGXc4LjxqLU8eni77GzJkyDiOUVvWroI+b47yRFqGDBmnMvYmonzbJaX/IHyUIUPGAEZQgseBYO1IWRpKypAhQ0Z/w02Lca3oVYYMGTI2BYJpIQ+9S4YMGQMYJInlrc100WkbVYYMGdMYadyVFvfRgQncBkiPaMiQIePljB+o7LwqFynjiwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
